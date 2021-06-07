@@ -68,21 +68,23 @@ body {
     transition: 0.2s;
     font-family: 'Orienta', sans-serif;
     color: black !important;
+    
 }
 
 .nav-link:after {
     content: "";
-    background-color: #2f2fff;
+    background-color: #ff5d8e;
     position: absolute;
     height: 3px;
     width: 0;
     left: 0;
     bottom: -5px;
-    transition: 0.3s;
+    transition:all 0.4s linear;
 }
 
 .nav-link:hover:after {
     width: 100%;
+    background-color: #2f2fff;
 }
 
 
@@ -96,6 +98,11 @@ body {
     flex-direction: column;
     position: relative !important;
     overflow-x: hidden !important;
+}
+
+.dark-light{
+    cursor: pointer;
+    transition: 0.3s linear;
 }
 
 a i.uil {
