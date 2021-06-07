@@ -22,7 +22,14 @@ function changetheme() {
   document.querySelectorAll('.skip-cng').forEach((result) => {
       result.classList.toggle('no-cng');
   })
-
-
-
 };
+
+//menu navbar
+document.getElementById("navbar-toggler").addEventListener('click' , ()=> {  
+  document.getElementById("menu-icons1").classList.remove("visually-hidden")
+  document.getElementById("menu-icons2").classList.remove("visually-hidden")
+  document.getElementById("menu-icons3").classList.remove("visually-hidden")
+  document.getElementById("menu-icons4").classList.remove("visually-hidden")
+  document.getElementById("menu-icons5").classList.remove("visually-hidden")
+  document.getElementById("menu-icons6").classList.remove("visually-hidden")
+});

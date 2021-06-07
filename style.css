@@ -25,6 +25,7 @@ body {
 
 }
 
+
 .no-cng {
     filter: invert(1) hue-rotate(180deg);
 }
@@ -232,10 +233,23 @@ a:hover i.uil-instagram {
     }
 }
 
+@media (max-width: 991px) {
+
+    .navbar-nav{
+        background-color: #ffffffe7;
+        
+    }
+
+    .navbar-nav li a span ,  .navbar-nav li a{
+        color: #000000 !important;
+    }
+}
+
 @media (max-width: 875px) {
     html {
         font-size: 70% !important;
     }
+   
 }
 
 @media (max-width: 382px) {
