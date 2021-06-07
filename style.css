@@ -4,7 +4,11 @@ Fira sans hello i amnishit patel
 orienta rest text
 
 */
+:root{
+    --fontclr: #161616;
 
+    --navbarbg : #ffffffe7;
+}
 
 html {
     font-size: medium;
@@ -236,12 +240,12 @@ a:hover i.uil-instagram {
 @media (max-width: 991px) {
 
     .navbar-nav{
-        background-color: #ffffffe7;
-        
+        background-color: var(--navbarbg);
+        border-radius: 5px;
     }
 
     .navbar-nav li a span ,  .navbar-nav li a{
-        color: #000000 !important;
+        color: var(--fontclr) !important;
     }
 }
 

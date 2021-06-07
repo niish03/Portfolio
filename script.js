@@ -11,9 +11,11 @@ function changetheme() {
       
       if (x == 'dark') {
         document.body.style.setProperty('--bgclr', '#fff');
+        document.body.style.setProperty('--navbarbg', '#161616e7');
         x= 'light';
       } else if (x == 'light') {
         document.body.style.setProperty('--bgclr', '#161616');
+        document.body.style.setProperty('--navbarbg', '#ffffffe7');
         x= 'dark';
       }
 
