@@ -5,9 +5,44 @@ orienta rest text
 
 */
 
+
 html{
     font-size: medium;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    --bgclr: #161616;
+    background-color: var(--bgclr);
+    scroll-behavior: smooth !important;
+    transition: 0.2s linear;
+}
+
+.dark-mode{
+
+    filter: invert(1) hue-rotate(180deg);
     
+    
+}
+
+.no-cng{
+    filter: invert(1) hue-rotate(180deg);
+}
+.dark{
+    color: rgb(243, 243, 243) !important;
+    fill: rgb(243, 243, 243) !important;
+}
+
+
+
+.light{
+    color: #161616 !important;
+    
+    fill: #161616 !important;
+}
+
+.light-bg{
+    background-color: white !important;
 }
 
 .font1{
