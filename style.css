@@ -6,70 +6,71 @@ orienta rest text
 */
 
 
-html{
+html {
     font-size: medium;
     scroll-behavior: smooth !important;
 }
 
-body{
+body {
     --bgclr: #161616;
     background-color: var(--bgclr);
     scroll-behavior: smooth !important;
     transition: 0.2s linear;
 }
 
-.dark-mode{
+.dark-mode {
 
     filter: invert(1) hue-rotate(180deg);
-    
-    
+
+
 }
 
-.no-cng{
+.no-cng {
     filter: invert(1) hue-rotate(180deg);
 }
-.dark{
+
+.dark {
     color: rgb(243, 243, 243) !important;
     fill: rgb(243, 243, 243) !important;
 }
 
 
 
-.light{
+.light {
     color: #161616 !important;
-    
+
     fill: #161616 !important;
 }
 
-.light-bg{
+.light-bg {
     background-color: white !important;
 }
 
-.font1{
+.font1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
 }
 
-.font2{
+.font2 {
     font-family: 'Fira Sans', sans-serif;
-    
+
 }
 
-.font3{
+.font3 {
     font-family: 'Orienta', sans-serif;
 }
 
-.nav-link{
+.nav-link {
     margin: 0.5rem;
     position: relative;
-    padding:0 !important;
-    border-bottom: 0.15rem solid rgba(3, 20, 255, 0) ;
+    padding: 0 !important;
+    border-bottom: 0.15rem solid rgba(3, 20, 255, 0);
     transition: 0.2s;
     font-family: 'Orienta', sans-serif;
     color: black !important;
 }
 
-.nav-link:after{
+.nav-link:after {
     content: "";
     background-color: #2f2fff;
     position: absolute;
@@ -80,51 +81,71 @@ body{
     transition: 0.3s;
 }
 
-.nav-link:hover:after{
-width: 100%;
+.nav-link:hover:after {
+    width: 100%;
 }
 
 
 
 
-#home{
+#home {
     height: 100vh !important;
     width: 100%;
     display: flex;
-justify-content: center;
-flex-direction: column;
-position: relative !important;
-overflow-x: hidden !important;
+    justify-content: center;
+    flex-direction: column;
+    position: relative !important;
+    overflow-x: hidden !important;
 }
 
-.blob{
-    
+a i.uil {
+    transition:all .2s ease-in-out;
+}
+
+a:hover i.uil-github {
+    color: #4078c0 !important;
+
+}
+
+a:hover i.uil-linkedin {
+    color: #0038b1 !important;
+
+}
+
+a:hover i.uil-instagram {
+    color: #ff5741 !important;
+
+}
+
+.blob {
+
     width: 25rem;
     height: auto;
-    fill:#646eff;
+    fill: #646eff;
 }
 
-.blob-img{
+.blob-img {
     width: 208px;
     height: 190px;
-    
+
 }
 
-.effect-wrap .effect{
+.effect-wrap .effect {
     position: absolute !important;
     z-index: -1;
 }
 
-.effect-1{
+.effect-1 {
     width: 40px;
     height: 40px;
     border: 4px solid #2145b3;
     bottom: 10%;
     right: 10%;
     animation: spin 10s linear infinite;
-    
+
 }
-.effect-2{
+
+.effect-2 {
     left: 3%;
     bottom: 20%;
     width: 40px;
@@ -133,7 +154,7 @@ overflow-x: hidden !important;
     justify-content: space-between;
 }
 
-.effect-2 div{
+.effect-2 div {
     height: 3px;
     width: 3px;
     background-color: #ff9c07;
@@ -141,7 +162,7 @@ overflow-x: hidden !important;
     animation: topBounce 3s ease-in-out infinite;
 }
 
-.effect-3{
+.effect-3 {
     height: 180px;
     width: 180px;
     border: 25px solid #ff2f2faf;
@@ -149,7 +170,8 @@ overflow-x: hidden !important;
     right: -130px;
     animation: topBounce 3s ease-in-out infinite;
 }
-.effect-4{
+
+.effect-4 {
     height: 50px;
     width: 50px;
     top: 15%;
@@ -160,52 +182,57 @@ overflow-x: hidden !important;
     left: 5%;
     animation: spin 10s linear infinite;
 }
-.effect-4 div{
+
+.effect-4 div {
     width: 1px;
-    
-    background-color: #646eff ;
+
+    background-color: #646eff;
 }
 
 
 @keyframes spin {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes topBounce {
-    0%,100%{
-transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(25px);
     }
-    
+
 }
 
 @media (min-width: 1500px) {
-    html{
+    html {
         font-size: 120% !important;
     }
 }
 
 @media (max-width: 1093px) {
-    html{
+    html {
         font-size: 80% !important;
     }
 }
 
 @media (max-width: 875px) {
-    html{
+    html {
         font-size: 70% !important;
     }
 }
 
 @media (max-width: 382px) {
-    html{
+    html {
         font-size: 60% !important;
     }
 }
