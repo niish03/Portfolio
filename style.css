@@ -60,6 +60,13 @@ body {
 
 .font3 {
     font-family: 'Orienta', sans-serif;
+    
+}
+
+
+
+.navbar{
+    transition: 0.5s linear;
 }
 
 .nav-link {
@@ -230,6 +237,13 @@ a:hover i.uil-instagram {
     }
 
 }
+/*<!-- about me --!>*/
+.heading p{
+    position: relative;
+    border-bottom: #2f2fff solid 3px;
+    width: fit-content;
+}
+
 
 @media (min-width: 1500px) {
     html {
