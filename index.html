@@ -24,36 +24,70 @@
       <a class="navbar-brand font1 cngthm dark" style="font-size: 2rem;" href="#">Portfolio</a>
       <button class="navbar-toggler" id="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span ><i class="uil uil-apps dark"></i></span>
+        <span ><i name="appsicon" class="uil uil-apps dark" style="color: #646eff;"></i></span>
         
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav"  >
-          
+        <ul class="navbar-nav-mobile d-flex row" id="navbar-mobile" >
+          <div class="col">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home"><span class="cngthm dark"><i id="menu-icons1"class="uil uil-estate visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;" ></i>Home</span></a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons2"class="uil uil-comment-info visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>About</span></a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons3"class="uil uil-brackets-curly visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>Skills</span></a>
             </li>
-          
-          
-             <li class="nav-item ">
-              <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons4"class="uil uil-file-check visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>Projects</span></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons5"class="uil uil-bag visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem; "></i>Experience</span></a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons6"class="uil uil-user-square visually-hidden" style="font-size: 1.2rem; margin-right: 0.5rem;"></i>Contact Us</span></a>
-            </li>
-          
-          <li class="nav-item">
-            <a class="cngthm dark-light mt-2 ms-2 cngthm dark" onclick="changetheme()" style="border:none; color: black;"><i class="uil uil-moon" ></i></a>
+          </div>
+            
+          <div class="col"><li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons4"class="uil uil-file-check visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>Projects</span></a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons5"class="uil uil-bag visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem; "></i>Experience</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons6"class="uil uil-user-square visually-hidden" style="font-size: 1.2rem; margin-right: 0.5rem;"></i>Contact Us</span></a>
+          </li></div>
+          <div class="row"><li class="nav-item" >
+            <a class="dark-light mt-2 ms-2 dark" onclick="changetheme()" style="border:none; color: black;"><i name="dark-lighticon"class="uil uil-moon" ></i></a>
+          </li></div> 
+        </ul> 
+        <ul class="navbar-nav" id="navbar-navid" >
+         <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home"><span class="cngthm dark"><i id="menu-icons1"class="uil uil-estate visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;" ></i>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons2"class="uil uil-comment-info visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>About</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons3"class="uil uil-brackets-curly visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>Skills</span></a>
+          </li>
+          
+           <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons4"class="uil uil-file-check visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem;"></i>Projects</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons5"class="uil uil-bag visually-hidden" style="font-size: 1.2rem;margin-right: 0.5rem; "></i>Experience</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#"><span class="cngthm dark"><i id="menu-icons6"class="uil uil-user-square visually-hidden" style="font-size: 1.2rem; margin-right: 0.5rem;"></i>Contact Us</span></a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="cngthm dark-light mt-2 ms-2 dark" id="btndarklight"onclick="changetheme()" style="border:none; color: black;"><i name="dark-lighticon"class="uil uil-moon" ></i></a>
+            </li>
+            
+          
+            
+         
+             
+          
+          
+             
+          
+          
           
          
           
@@ -62,7 +96,6 @@
           
           
         </ul>
-        
       </div>
       
     </div>
@@ -167,8 +200,8 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js" type="application/javascript"></script>>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>

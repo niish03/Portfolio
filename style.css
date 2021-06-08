@@ -5,9 +5,9 @@ orienta rest text
 
 */
 :root{
-    --fontclr: #161616;
+    --fontclr: #fafafa;
 
-    --navbarbg : #ffffffe7;
+    --navbarbg : #2b2b2be5;
 }
 
 html {
@@ -19,19 +19,16 @@ body {
     --bgclr: #161616;
     background-color: var(--bgclr);
     scroll-behavior: smooth !important;
-    transition: 0.2s linear;
+    transition: .2s ;
 }
 
 .dark-mode {
-
-    filter: invert(1) hue-rotate(180deg);
-
-
+    filter: invert(1) hue-rotate(180deg) !important;
 }
 
 
 .no-cng {
-    filter: invert(1) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg) !important;
 }
 
 .dark {
@@ -92,7 +89,15 @@ body {
     background-color: #2f2fff;
 }
 
+.navbar-nav{
+    display: flex !important;
+}
 
+
+.navbar-nav-mobile{
+    list-style: none;  
+    display: none !important;
+}
 
 
 #home {
@@ -108,6 +113,7 @@ body {
 .dark-light{
     cursor: pointer;
     transition: 0.3s linear;
+    color:#fafafa;
 }
 
 a i.uil {
@@ -237,15 +243,35 @@ a:hover i.uil-instagram {
     }
 }
 
+
+
 @media (max-width: 991px) {
 
     .navbar-nav{
-        background-color: var(--navbarbg);
-        border-radius: 5px;
+        display: none !important;
     }
+    
 
-    .navbar-nav li a span ,  .navbar-nav li a{
+    .navbar-nav-mobile{
+        background-color: var(--navbarbg) !important;
+        border-radius: 5px;
+        padding: 1rem;
+        display:flex !important;
+        }
+
+    .navbar-nav-mobile li a span{
+        
+        
+       padding: 5px;
         color: var(--fontclr) !important;
+    }
+    .navbar-nav-mobile li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c7c7c75e;
+        border-radius: 3px;
+        
     }
 }
 
