@@ -20,6 +20,7 @@ body {
     background-color: var(--bgclr);
     scroll-behavior: smooth !important;
     transition: .2s ;
+    
 }
 
 .dark-mode {
@@ -114,7 +115,7 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative !important;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 
 .dark-light{
