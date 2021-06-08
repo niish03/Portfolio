@@ -11,6 +11,11 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+document.getElementById('navbar-mobile').addEventListener("click" ,()=>{
+  if(window.innerWidth < 990)
+  document.getElementById('navbar-toggler').click();
+  } )
+
 var typed = new Typed('.typing', {
   strings: ['Web developer', 'Flutter developer', 'UI/UX designer', 'Graphic desiner', 'Freelancer', 'Photographer'],
   backSpeed: 50,
