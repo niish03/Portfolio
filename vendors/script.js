@@ -78,6 +78,15 @@ $('#skill1dd').click(()=>{
   
 })
 
+$('#skill2dd').click(()=>{
+  
+  if (!$('#skill2dd').hasClass("collapsed")) 
+    $('#skill2').addClass("uil-angle-up").removeClass('uil-angle-down')
+  if($('#skill2dd').hasClass("collapsed"))
+    $('#skill2').addClass("uil-angle-down").removeClass('uil-angle-up')
+  
+})
+
     /*top back*/
     const onscroll = (el, listener) => {
       el.addEventListener('scroll', listener)

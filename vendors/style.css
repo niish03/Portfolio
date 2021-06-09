@@ -278,6 +278,9 @@ a:hover i.uil-instagram {
   .w60{
     animation: w60 1s forwards;
   }
+  .w50{
+    animation: w50 1s forwards;
+  }
 
   .back-to-top {
     position: fixed;
@@ -344,6 +347,15 @@ a:hover i.uil-instagram {
     }
     100%{
         width: 60%;
+        
+    }
+}
+@keyframes w50 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
         
     }
 }
