@@ -61,7 +61,7 @@ body {
 
 .font3 {
     font-family: 'Orienta', sans-serif;
-    word-spacing: -0.2rem;
+    word-spacing: -0.1rem;
 }
 
 
@@ -215,7 +215,41 @@ a:hover i.uil-instagram {
     background-color: #646eff;
 }
 
+/*Facts code starts */
 
+.hours-calc {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hours-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 160px !important;
+    height: 180px;
+    overflow: hidden;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--navbarbg);
+    box-shadow: rgba(151, 151, 151, 0.03) 0px 0px 10px 10px;
+    color: var(--fontclr);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -249,6 +283,10 @@ a:hover i.uil-instagram {
 @media (min-width: 1500px) {
     html {
         font-size: 120% !important;
+    }
+    .card{
+        width: 180px !important;
+        height: 200px !important;
     }
 }
 
