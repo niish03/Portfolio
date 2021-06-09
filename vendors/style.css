@@ -8,6 +8,7 @@ orienta rest text
     --fontclr: #fafafa;
 
     --navbarbg : #2b2b2be5;
+    --contentbg : #2b2b2be5;
 }
 
 html {
@@ -256,6 +257,27 @@ a:hover i.uil-instagram {
     align-items: center;
   }
 
+  .dropdown-skills{
+      background-color: var(--contentbg) !important;
+      border-radius: 4px;
+      padding: 0.2rem;
+      letter-spacing: 1px;
+  }
+
+
+
+  .w100{
+      animation: w100 1s forwards;
+  }
+  .w90{
+    animation: w90 1s forwards;
+  }
+  .w70{
+    animation: w70 1s forwards;
+  }
+  .w60{
+    animation: w60 1s forwards;
+  }
 
   .back-to-top {
     position: fixed;
@@ -288,7 +310,44 @@ a:hover i.uil-instagram {
   }
   
   
-  
+
+@keyframes w100 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+        
+    }
+}
+@keyframes w90 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+        
+    }
+}
+@keyframes w70 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+        
+    }
+}
+@keyframes w60 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+        
+    }
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
