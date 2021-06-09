@@ -215,6 +215,15 @@ a:hover i.uil-instagram {
     background-color: #646eff;
 }
 
+
+/*<!-- about me --!>*/
+.heading p{
+    position: relative;
+    border-bottom: #2f2fff solid 3px;
+    width: fit-content;
+}
+
+
 /*Facts code starts */
 
 .hours-calc {
@@ -237,14 +246,45 @@ a:hover i.uil-instagram {
     overflow: hidden;
     margin: 2rem;
     padding: 1rem;
-    background-color: var(--navbarbg);
-    box-shadow: rgba(151, 151, 151, 0.03) 0px 0px 10px 10px;
+    background-color: var(--bgclr);
+    box-shadow: #2f2fff18 0px 0px 10px 10px;
     color: var(--fontclr);
     border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #2f2fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #6776f4;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
   }
   
   
@@ -271,13 +311,6 @@ a:hover i.uil-instagram {
     }
 
 }
-/*<!-- about me --!>*/
-.heading p{
-    position: relative;
-    border-bottom: #2f2fff solid 3px;
-    width: fit-content;
-}
-
 
 @media (min-width: 1500px) {
     html {
