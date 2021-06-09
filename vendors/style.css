@@ -246,7 +246,7 @@ a:hover i.uil-instagram {
     overflow: hidden;
     margin: 2rem;
     padding: 1rem;
-    background-color: var(--bgclr);
+    background-color: var(--navbarbg);
     box-shadow: #2f2fff18 0px 0px 10px 10px;
     color: var(--fontclr);
     border: none;
