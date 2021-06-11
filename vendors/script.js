@@ -36,7 +36,7 @@ function changetheme() {
     document.body.style.setProperty('--bgclr', '#fff');
     document.body.style.setProperty('--navbarbg', '#ffffffe7');
     document.body.style.setProperty('--contentbg', '#6363ff1a');
-    $('i[name="dark-lighticon"]').removeClass('uil-brightness').addClass('uil-moon');
+    $('i[name="dark-lighticon"]').removeClass('uil-brightness').addClass('uil-moon').css('color', '#161616');
     $('i[name="appsicon"]').addClass('light');
 
 
@@ -45,7 +45,7 @@ function changetheme() {
     document.body.style.setProperty('--bgclr', '#161616');
     document.body.style.setProperty('--navbarbg', '#2b2b2be5');
     document.body.style.setProperty('--contentbg', '#2b2b2be5');
-    $('i[name="dark-lighticon"]').removeClass('uil-moon').addClass('uil-brightness');
+    $('i[name="dark-lighticon"]').removeClass('uil-moon').addClass('uil-brightness').css('color', '#fff');
     $('i[name="appsicon"]').removeClass('light');
     x = 'dark';
   }
