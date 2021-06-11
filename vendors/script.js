@@ -69,6 +69,7 @@ document.getElementById("navbar-toggler").addEventListener('click', () => {
 
 //skills
 
+
 $('#skill1dd').click(()=>{
   
   if (!$('#skill1dd').hasClass("collapsed")) 
@@ -84,6 +85,42 @@ $('#skill2dd').click(()=>{
     $('#skill2').addClass("uil-angle-up").removeClass('uil-angle-down')
   if($('#skill2dd').hasClass("collapsed"))
     $('#skill2').addClass("uil-angle-down").removeClass('uil-angle-up')
+  
+})
+
+$('#skill3dd').click(()=>{
+  
+  if (!$('#skill3dd').hasClass("collapsed")) 
+    $('#skill3').addClass("uil-angle-up").removeClass('uil-angle-down')
+  if($('#skill3dd').hasClass("collapsed"))
+    $('#skill3').addClass("uil-angle-down").removeClass('uil-angle-up')
+  
+})
+
+$('#skill4dd').click(()=>{
+  
+  if (!$('#skill4dd').hasClass("collapsed")) 
+    $('#skill4').addClass("uil-angle-up").removeClass('uil-angle-down')
+  if($('#skill4dd').hasClass("collapsed"))
+    $('#skill4').addClass("uil-angle-down").removeClass('uil-angle-up')
+  
+})
+
+$('#skill5dd').click(()=>{
+  
+  if (!$('#skill5dd').hasClass("collapsed")) 
+    $('#skill5').addClass("uil-angle-up").removeClass('uil-angle-down')
+  if($('#skill5dd').hasClass("collapsed"))
+    $('#skill5').addClass("uil-angle-down").removeClass('uil-angle-up')
+  
+})
+
+$('#skill6dd').click(()=>{
+  
+  if (!$('#skill6dd').hasClass("collapsed")) 
+    $('#skill6').addClass("uil-angle-up").removeClass('uil-angle-down')
+  if($('#skill6dd').hasClass("collapsed"))
+    $('#skill6').addClass("uil-angle-down").removeClass('uil-angle-up')
   
 })
 
