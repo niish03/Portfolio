@@ -44,7 +44,7 @@ function changetheme() {
   } else if (x == 'light') {
     document.body.style.setProperty('--bgclr', '#161616');
     document.body.style.setProperty('--navbarbg', '#2b2b2be5');
-    document.body.style.setProperty('--contentbg', '#2b2b2be5');
+    document.body.style.setProperty('--contentbg', '#49567075');
     $('i[name="dark-lighticon"]').removeClass('uil-moon').addClass('uil-brightness').css('color', '#fff');
     $('i[name="appsicon"]').removeClass('light');
     x = 'dark';

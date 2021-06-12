@@ -15,13 +15,22 @@
   <link rel="stylesheet" href="vendors/style.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Nishit's Portfolio</title>
 </head>
 
 <body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 800,
+      once: true,
+    });
+  </script>
   <nav class="navbar navbar-expand-lg navbar-light bg-gradient fixed-top p-0 m-0 " id="navbar">
     <div class="container-fluid d-inline-flex container ">
-      <a class="navbar-brand font3 cngthm dark" style="font-size: 2rem;" href="#">
+      <a class="navbar-brand font1 cngthm dark" style="font-size: 2rem;" href="#">
         < Nishit /></a>
       <button class="navbar-toggler" id="navbar-toggler" style="border: none;" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -205,17 +214,17 @@
     </div>
   </section>
 
-  <section id="about">
-    <center class="font2 heading" style="font-size:2rem">
+  <section id="about" >
+    <center class="font2 heading" data-aos="fade-up" style="font-size:2rem">
       <p class="dark cngthm ">ABOUT ME</p>
     </center>
     <div class="container">
       <div class="row">
-        <div class="col-md-4 d-flex justify-content-md-start justify-content-center">
+        <div class="col-md-4 d-flex justify-content-md-start justify-content-center" data-aos="fade-up"  data-aos-delay="100">
           
 <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 20rem; height: 20rem;"  loop autoplay></lottie-player>
         </div>
-        <div class="col-md-8 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+        <div class="col-md-8 d-flex justify-content-center align-items-center" style="margin-top: 1rem;" data-aos="fade-up" data-aos-delay="200">
           <p class="cngthm dark font3" style="font-size:1.2rem;  text-align: justify;">Hello there <span
               class="skip-cng">&#128075</span> myself <span style="color: #646eff; font-weight: bold;">Nishit
               Patel</span>, an enthusiastic Information Technology guy studying at <a href="https://www.charusat.ac.in"
@@ -239,11 +248,11 @@
   </section>
 
   <section class="mt-5" id="facts">
-    <center class="font2 heading" style="font-size:2rem">
+    <center class="font2 heading" data-aos="fade-up" style="font-size:2rem">
       <p class="dark cngthm ">FACTS</p>
     </center>
     <div class="hours-calc" style="font-weight: 700;">
-      <div class="row hours-container" data-aos="fade-up">
+      <div class="row hours-container" data-aos="fade-up" data-aos-delay="100">
         <div class="card col-auto">
           <i class="uil uil-arrow " style="color: rgb(45, 155, 245); font-size: 40px; padding-bottom: 0;"></i>
           <p class="font1 cngthm dark" style=" font-size: 1.5rem;"><span data-purecounter-start="0"
@@ -278,16 +287,16 @@
   </section>
 
   <section class="mt-5" id="skills">
-    <center class="font2 heading" style="font-size:2rem">
+    <center class="font2 heading" style="font-size:2rem" data-aos="fade-up">
       <p class="dark cngthm ">SKILLS</p>
     </center>
     <div class="container">
       <div class="row">
-        <div class="col-md d-flex justify-content-center ">
+        <div class="col-md d-flex justify-content-center " data-aos="zoom-in-up" data-aos-delay="100">
           
 <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_1LhsaB.json" mode="bounce" background="transparent"  speed="1"  style="width: 20rem; height: 20rem;"  loop  autoplay></lottie-player>
         </div>
-        <div class="col-md">
+        <div class="col-md" data-aos="zoom-in-up" data-aos-delay="200">
           <!--Frontend portions-->
           <div class="row dark dropdown-skills m-2" id="skill1dd" name=hoverskills data-bs-toggle="collapse"
             data-bs-target="#frontend" role="button" aria-expanded="false" aria-controls="frontend">
@@ -578,19 +587,26 @@ data-bs-target="#database" role="button" aria-expanded="false" aria-controls="da
 
 <section class="mt-5" id="projects">
 
-  <center class="font2 heading" style="font-size:2rem">
-    <p class="dark cngthm ">PROJECT</p>
+  <center class="font2 heading" style="font-size:2rem"  data-aos="fade-up">
+    <p class="dark cngthm ">PROJECTS</p>
   </center>
-<div class="container">
-  <center>
-  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_0tue65cn.json"  background="transparent"  speed="1"  style="width: 30rem; height: 25rem;"  loop  autoplay></lottie-player>
+<div class="container" data-aos="fade-up" data-aos-delay="200">
+  <center  >
+  <lottie-player  src="https://assets7.lottiefiles.com/packages/lf20_0tue65cn.json"  background="transparent"  speed="1"  style="width: 30rem; height: 25rem;"  loop  autoplay></lottie-player>
 </center>
-  <div class="row">
-    <div class="col-md d-flex justify-content-center">
+  <div class="row cngthm dark" >
+    
       
+      <p class="font3 p-0 m-0" style="font-size: 1rem;">Featured project</p>
+      <p class="font2 p-0" style="font-size: 1.5rem;">Bus booking system</p>
 
-    </div>
-    <div class="col-md"></div>
+      <div class="projectcard projecttext">
+        <p class="font3" style="text-align: justify;">Application is made keeping commuters in mind. This system aims to provide you your tens free means of monitoring a travel journey's seat booking and details about your journey at your mobile device on your fingertip.</p>
+      </div>
+
+
+    
+   
   </div>
 </div>
   
