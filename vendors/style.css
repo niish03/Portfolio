@@ -442,13 +442,17 @@ a:hover i.uil-instagram {
 
 @media (max-width: 1093px) {
     html {
-        font-size: 80% !important;
+        font-size: 90% !important;
     }
 }
 
 
 
 @media (max-width: 991px) {
+
+    html {
+        font-size: 75% !important;
+    }
 
     .navbar-nav{
         display: none !important;
@@ -487,6 +491,6 @@ a:hover i.uil-instagram {
 
 @media (max-width: 382px) {
     html {
-        font-size: 70% !important;
+        font-size: 60% !important;
     }
 }
