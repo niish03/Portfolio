@@ -334,7 +334,38 @@ a:hover i.uil-instagram {
       background-color: var(--contentbg) !important;
       padding: 1rem;
   }
+  /*
+.mobilehoverimggrey{
+  width: 100%;
+    filter:brightness(30%) !important;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+.mobilehoverimggrey:hover{
+  
+    filter: none !important;
+
+}*/
+.projectcardmobile{
+    width: fit-content;
+
+}
+
+.mobile-project{
+    display: none;
+    padding: 2rem !important;
+    margin-top: 8rem;
+    background-size: cover;
+}
+.mobile-project:hover{
+    cursor: pointer;
+}
+.pcprojects{
+   
+
+}
   .hoverimggrey{
+    
     width: 50%; 
     position: absolute;
     z-index: 1;
@@ -346,6 +377,10 @@ a:hover i.uil-instagram {
   .hoverimggrey:hover{
         filter: none !important;
   }
+
+  .imageContainer{
+    display: none !important;
+}
 
   .back-to-top {
     position: fixed;
@@ -518,10 +553,25 @@ a:hover i.uil-instagram {
         
     }
 }
-
 @media (max-width: 875px) {
     html {
         font-size: 70% !important;
+    }
+   
+}
+
+
+@media (max-width: 768px) {
+    .mobile-project{
+        display: block !important;
+        margin: 1rem;
+    }
+    .pcprojects{
+        display: none !important;
+
+    }
+    .hoverimggrey{
+        display: none !important;
     }
    
 }
