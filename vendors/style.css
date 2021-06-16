@@ -313,22 +313,7 @@ a:hover i.uil-instagram {
     animation: w40 1s forwards;
   }
   
-.pillslanguauge{
-   border: solid 2px var(--bgclr) !important    ;
-    padding: 0.5rem;
-    border-radius: 10px;
-    transition: fill 0.2s;
-    position: relative;
-    transition:all 0.1s ease-in;
-    user-select: none;
-}
 
-
-
-.pillslanguauge:hover{
-    background-color:  var(--bgclr) !important;
-    color: invert(var(--fontclr)) huerotate(180deg) !important;
-}
   .projectcard{
       width: 60% !important;
       background-color: var(--contentbg) !important;
@@ -381,13 +366,21 @@ a:hover i.uil-instagram {
 
 .side-projects{
     margin-top: 8rem;
+    
 }
 .otherprojectcard{
-    margin-left: 0;
+    position: relative;
     margin: 1rem;
     background-color: var(--contentbg) !important;
-    padding: 1rem;
-    height: 10rem;
+    height: 16rem;
+    top: 0;
+    border-radius: 5px !important;
+    transition: top ease 0.2s;
+}
+
+.otherprojectcard:hover{
+    top: -10px;
+    cursor: pointer;
 }
 
 
@@ -520,10 +513,18 @@ a:hover i.uil-instagram {
         height: 200px !important;
     }
 }
+@media (max-width: 1198px) {
+   .otherprojectcard{
+       height: 20rem;
+   }
+}
 
 @media (max-width: 1093px) {
     html {
         font-size: 90% !important;
+    }
+    .otherprojectcard{
+        height: 16rem;
     }
 }
 
@@ -537,6 +538,9 @@ a:hover i.uil-instagram {
 
     .navbar-nav{
         display: none !important;
+    }
+    .otherprojectcard{
+        height: 20rem;
     }
     
 
@@ -563,6 +567,9 @@ a:hover i.uil-instagram {
     }
 }
 @media (max-width: 875px) {
+    .otherprojectcard{
+        height: 16rem;
+    }
     html {
         font-size: 70% !important;
     }
@@ -571,8 +578,15 @@ a:hover i.uil-instagram {
 
 
 @media (max-width: 768px) {
+    .otherprojectcard{
+        height: 13rem;
+        margin: 0 !important;
+        
+        margin-top: 1rem !important;
+        margin-left: 1rem;
+    }
     .side-projects{
-        margin-top: 2rem;
+        margin-top: 2rem !important;
     }
     .mobile-project{
         display: block !important;
