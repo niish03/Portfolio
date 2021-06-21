@@ -126,6 +126,15 @@ $('#skill6dd').click(()=>{
   
 })
 
+
+  if (window.innerWidth < 768)
+    $('.cd-timeline-content').attr('data-aos','fade-right')
+  
+
+  
+  
+
+
     /*top back*/
     const onscroll = (el, listener) => {
       el.addEventListener('scroll', listener)
