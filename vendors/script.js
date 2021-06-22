@@ -37,6 +37,7 @@ function changetheme() {
     document.body.style.setProperty('--navbarbg', '#ffffffe7');
     document.body.style.setProperty('--contentbg', '#6363ff1a');
     document.body.style.setProperty('--fontclr', '#000');
+    document.body.style.setProperty('--contact-slate', '#fff');
     $('i[name="dark-lighticon"]').removeClass('uil-brightness').addClass('uil-moon').css('color', '#161616');
     $('i[name="appsicon"]').addClass('light');
 
@@ -47,6 +48,7 @@ function changetheme() {
     document.body.style.setProperty('--navbarbg', '#2b2b2be5');
     document.body.style.setProperty('--contentbg', '#49567075 ');
     document.body.style.setProperty('--fontclr', '#f3f3f3');
+    document.body.style.setProperty('--contact-slate', '#495670');
     $('i[name="dark-lighticon"]').removeClass('uil-moon').addClass('uil-brightness').css('color', '#fff');
     $('i[name="appsicon"]').removeClass('light');
     x = 'dark';
@@ -131,6 +133,21 @@ $('#skill6dd').click(()=>{
     $('.cd-timeline-content').attr('data-aos','fade-right')
   
 
+    function contactmenuclick(){
+      if($('#hireme').hasClass('active-with-border'))
+      {//When contact me pressed
+        $('#hireme').removeClass('active-with-border');
+        $('#contactmebtn').addClass('active-with-border');
+        $('#contactform').removeClass('visually-hidden');
+        $('#hiremeform').addClass('visually-hidden');
+      }
+      else{ //When hire me pressed
+        $('#contactmebtn').removeClass('active-with-border');
+        $('#hireme').addClass('active-with-border');
+        $('#contactform').addClass('visually-hidden');
+        $('#hiremeform').removeClass('visually-hidden');
+      }
+    }
   
   
 

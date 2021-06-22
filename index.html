@@ -1007,31 +1007,31 @@
 </section> <!-- cd-timeline -->
 </section>
 
-<section id="contactme" class="contact">
+<section id="contactme" class="contact mb-5">
   <center class="font2 heading" data-aos="fade-up" style="font-size:2rem">
     <p class="dark cngthm ">CONTACT ME</p>
   </center>
 
-    <div class="container dark cngthm" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
 
 
       <div class="row gy-4">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 dark cngthm">
 
           <div class="row gy-4">
             
             <div class="col-md-6">
               <div class="info-box">
-                <i class="ri-phone-line ri-2x" style="color: rgb(29, 29, 233);"></i>
+                <i class="uil uil-phone dark" style="color: rgb(29, 29, 233);"></i>
                 <h3 style="user-select: text;">Call Me</h3>
                 <p><a style="text-decoration: none; user-select: text;" href="tel:+91-8128812480">+91-8128812480</a><br><br></p>
               </div>
             </div>
             <div class="col-md-6">
               <div class="info-box">
-                <i class="ri-mail-line ri-2x" style="color: rgb(29, 29, 233);"></i>
+                <i class="uil uil-envelope dark" style="color: rgb(29, 29, 233);"></i>
                 <h3>Email Me</h3>
                 <p><a style="text-decoration: none; user-select: text;"
                     href="mailto:info@geartechengineers.tech?subject=Regarding%20information&body=Dear%20Geartech%20engineers%2C">hello@nishitpatel.me</a><br><br>
@@ -1043,8 +1043,44 @@
 
         </div>
 
-        <div class="col-lg-6 skip-cng">
+        <div class="col-lg-6">
+
+          <div class="row dark cngthm d-flex ">
+            <div class="col d-flex justify-content-center">
+              <div  id="hireme" style="cursor: pointer;" onclick="contactmenuclick()">
+                <p class="ps-5 pe-5 font2" >Hire Me</p>
+              </div></div>
+            <div class="col d-flex justify-content-center" >
+              <div class="active-with-border"  id="contactmebtn" onclick="contactmenuclick()" style="cursor: pointer;">
+                <p class="ps-5 pe-5 font2">Contact Me</p>
+              </div></div>
+          </div>
+
+          <form id="hiremeform" class="visually-hidden dark cngthm font3">
+            <div class="row gy-4">
+              <p>I want to Hire you for <select  style="width: fit-content; font-size: medium; border: none;  " class="form-select d-inline-block skip-cng" aria-label="Default select example">
+                <option selected>Web Development</option>
+                <option value="1">Android Development</option>
+                <option value="2">Graphic Designer</option>
+                <option value="3">Photographyr</option>
+                <option value="4">Others</option>
+               
+              </select>
+              
+            </p>
+            <textarea class="form-control skip-cng" name="message" id="message" rows="6" placeholder="Describe your requirements..."
+              required></textarea>
+
+              <center>
+                <input class="submit skip-cng" id="submit" type="submit" value="Send message"></input>
+              </center>
+              
+            </div>
+            
+          </form>
+          
           <form id="contactform" method="post" class="php-email-form">
+
             <div class="row gy-4">
 
               <div class="col-md-6">
@@ -1092,7 +1128,7 @@
       </div>
       <div class="credits">
   
-        Designed with <span style="color: red;">&#10084;</span> by <a href="https://www.linkedin.com/in/nishit-patel03">Nishit patel</a>
+        Designed with <span class="skip-cng" style="color: red;">&#10084;</span> by <a href="https://www.linkedin.com/in/nishit-patel03">Nishit patel</a>
       </div>
     </div>
   </center>
